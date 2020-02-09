@@ -1,0 +1,19 @@
+<div class="problem-solution">
+  <div class="left">
+    <h3>{{problem.title}}</h3>
+    <p>{{problem.description}}</p>
+    <p>{{problem.footer}}</p>
+  </div>
+  <div class="middle">
+    <h3>Entrada pelo usuário:</h3>
+    <textarea name="entrada" id="entryData" cols="30" rows="10" [(ngModel)]="problem.entryData"></textarea>
+    <button class="solve" (click)="problem.solve()">
+      Resolver
+    </button>
+  </div>
+  <div class="right">
+    <h3>Wooh ! It's Magic:</h3>
+    <textarea name="entrada" id="result" cols="30" rows="5" [(ngModel)]="problem.result"></textarea>
+  </div>
+</div>
+

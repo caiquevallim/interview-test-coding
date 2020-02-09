@@ -1,0 +1,15 @@
+<div class="problem-list">
+  <div class="items">
+    <button type="button"
+            *ngFor="let p of problems.problems"
+            (click)="selectProblem(p)"
+            class="problem"
+            [ngClass]="problemSelected && problemSelected.id == p.id ? 'active' : ''"
+    >
+      Problema {{p.id}}
+    </button>
+
+  </div>
+</div>
+<app-problem-solution *ngIf="!!problemSelected" [problem]="problemSelected"></app-problem-solution>
+

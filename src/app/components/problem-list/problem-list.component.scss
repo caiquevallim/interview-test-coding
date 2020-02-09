@@ -1,0 +1,36 @@
+.problem-list{
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 40%;
+  .problem{
+    margin: auto;
+    border: none;
+    width: 180px;
+    height: 48px;
+    background-color: transparent;
+    color: white;
+    transition: 300ms all;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+      background-color: white;
+      color: #2E2E8F;
+      box-shadow: 3px 6px 5px 0 #35353580;
+    }
+    &:active{
+      border: none;
+    }
+  }
+  .active{
+    background-color: white;
+    color: #2E2E8F;
+    border: none;
+    box-shadow: 3px 6px 5px 0 #35353580;
+  }
+  .items{
+    display: flex;
+    width: 20%;
+  }
+}
